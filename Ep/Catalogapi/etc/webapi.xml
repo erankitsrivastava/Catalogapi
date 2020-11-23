@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**<fc15b263-84f5-409d-9d9b-c3daa3e30378>\m2\app\code\Ep\Catalogapi\etc\webapi.xml
+ * Copyright © 2020 ePurnima. All rights reserved.
+ */
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/customcatalog/:sku" method="GET">
+        <service class="Ep\Catalogapi\Api\CustomcatalogInterface" method="getById"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+</routes>
